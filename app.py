@@ -24,8 +24,6 @@ class CatImageClassifier:
         return predicted_label[0]
 
 classifier = CatImageClassifier('cat_classifier_model.h5', 'label_encoder_classes.npy')
-
-# Streamlit app
 st.title("Cat Name Predictor")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
